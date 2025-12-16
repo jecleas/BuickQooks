@@ -1,17 +1,12 @@
-//
-//  BuickQooksApp.swift
-//  BuickQooks
-//
-//  Created by Franco  Buena on 19/11/2025.
-//
-
 import SwiftUI
 
 @main
 struct BuickQooksApp: App {
+    @StateObject private var environment = AppEnvironment()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(container: environment.container)
         }
     }
 }
