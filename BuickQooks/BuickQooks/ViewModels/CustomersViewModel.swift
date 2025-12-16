@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import Combine
 
 final class CustomersViewModel: ObservableObject {
     @Published private(set) var customers: [Customer] = []

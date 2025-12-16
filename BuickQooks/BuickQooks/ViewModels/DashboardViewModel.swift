@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 final class DashboardViewModel: ObservableObject {
     @Published private(set) var invoices: [Invoice] = []

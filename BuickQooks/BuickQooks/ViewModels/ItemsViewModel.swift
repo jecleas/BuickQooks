@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import Combine
 
 final class ItemsViewModel: ObservableObject {
     @Published private(set) var items: [Item] = []

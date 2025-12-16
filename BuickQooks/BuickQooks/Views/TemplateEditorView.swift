@@ -54,11 +54,13 @@ struct TemplateEditorView: View {
     }
 }
 
-private extension Binding where Value == String? {
-    init(_ source: Binding<String?>, replacingNilWith defaultValue: String) {
-        self.init(
+private extension Binding where Value == String {
+    init(_ source: Binding<String?>, replacingNilWith defaultValue: String = "") {
+        self = Binding<String>(
             get: { source.wrappedValue ?? defaultValue },
-            set: { source.wrappedValue = $0.isEmpty ? nil : $0 }
+            set: { newValue in
+                source.wrappedValue = newValue.isEmpty ? nil : newValue
+            }
         )
     }
 }

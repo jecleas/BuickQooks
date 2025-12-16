@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 final class AppEnvironment: ObservableObject {
     let container: AppContainer

@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import Combine
 
 final class TemplateSettingsViewModel: ObservableObject {
     @Published var settings: TemplateSettings

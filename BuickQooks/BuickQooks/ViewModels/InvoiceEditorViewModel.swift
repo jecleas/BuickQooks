@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import Combine
 
 final class InvoiceEditorViewModel: ObservableObject {
     @Published var selectedCustomer: Customer?

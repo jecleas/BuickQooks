@@ -29,8 +29,6 @@ struct DashboardView: View {
                 .scaledToFit()
                 .frame(width: 64, height: 64)
             VStack(alignment: .leading) {
-                Text("BuickQooks")
-                    .font(.largeTitle.bold())
                 Text("Invoice dashboard")
                     .foregroundStyle(.secondary)
             }
